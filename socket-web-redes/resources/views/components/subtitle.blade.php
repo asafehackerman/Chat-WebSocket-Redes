@@ -1,0 +1,1 @@
+<h3 class="subtitle">{{ $slot }}</h3>

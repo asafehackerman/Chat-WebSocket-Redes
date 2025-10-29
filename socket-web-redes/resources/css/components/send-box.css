@@ -1,0 +1,9 @@
+.send-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    border-bottom: 1px solid #555;
+}

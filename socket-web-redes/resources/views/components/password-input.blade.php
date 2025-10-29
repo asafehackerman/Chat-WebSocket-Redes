@@ -1,0 +1,1 @@
+<input class="password-input" type="password">{{ $slot }}</input>
