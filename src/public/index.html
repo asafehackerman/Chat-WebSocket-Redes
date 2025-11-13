@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Delicinha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Salas</h3>
+    <div>
+      <input id="newRoomInput" placeholder="Criar/entrar sala..." />
+      <div class="controls">
+        <button id="createRoomBtn">Criar/Entrar</button>
+        <button id="refreshRoomsBtn">Atualizar</button>
+      </div>
+    </div>
+    <div class="rooms" id="roomsList"></div>
+
+    <hr />
+    <div>
+      <label>Apelido:</label><br/>
+      <input id="nickInput" placeholder="Seu nick (opcional)" />
+    </div>
+  </div>
+
+  <div class="main">
+    <header>
+      <strong id="currentRoomLabel">Nenhuma sala selecionada</strong>
+      <button id="leaveBtn">Sair da sala</button>
+    </header>
+
+    <ul id="messages"></ul>
+
+    <div id="composer">
+      <input id="messageInput" placeholder="Digite sua mensagem..." />
+      <button id="sendBtn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
